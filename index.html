@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Personal Webpage</title>
+    <title>Jessica Metzger</title>
     <style>
         body {
             margin: 0;
-            padding: 0;
+            padding: 10px;
             font-family: 'Ubuntu';
         }
 
@@ -15,28 +15,53 @@
             background-image: url(https://github.com/jessicametzger/jessicametzger.github.io/raw/main/background-image.png);
             background-size: cover;
             background-position: center;
-            height: 300px;
+            height: 200px;
             color: white;
-            text-align: center;
+            text-align: left;
             padding-top: 100px;
+      		padding-left: 10px;
+      		padding-right: 10px;
+      		font-weight: bold;
         }
 
         .container {
             max-width: 960px;
-            margin: 0 auto;
-            padding: 20px;
+            margin: 10px;
+            padding: 10px;
+        }
+      
+        .text-container {
+            float: left; /* Float the text container to the left */
+            width: 70%; /* Adjust as needed */
+            padding: 10px;
+        }
+
+        .image-container {
+            float: right; /* Float the image container to the right */
+            width: 30%; /* Adjust as needed */
+        }
+
+        .image-container img {
+            max-width: 100%; /* Make sure the image scales properly */
+            display: block;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Jessica Metzger</h1>
-        <p>jessmetz@mit.edu</p>
     </div>
   
-        <h2>Jessica Metzger</h2>
-Physics PhD student at MIT studying active matter and nonequilibrium statistical physics. Former physics/math undergraduate at the University of Chicago.
-
+    <div class="container">
+        <div class="text-container">
+            <h2>Jessica Metzger</h2>
+        <p>jessmetz@mit.edu</p>
+        <p>Physics PhD student at MIT studying active matter and nonequilibrium statistical physics. Former physics/math undergraduate at the University of Chicago.</p>
+        </div>
+        <div class="image-container">
+            <img src="https://github.com/jessicametzger/jessicametzger.github.io/blob/main/head-shot.jpg" alt="head-shot.jpg">
+        </div>
+    </div>
+  
     <div class="container">
         <h2>Articles/preprints</h2>
 <ul>
@@ -76,6 +101,9 @@ Physics PhD student at MIT studying active matter and nonequilibrium statistical
 </ul>
       
         <h2>Contact</h2>
+      <p>
+        Office: MIT 8-303
+      </p>
         <p>jessmetz@mit.edu</p>
     </div>
   
@@ -87,6 +115,7 @@ Physics PhD student at MIT studying active matter and nonequilibrium statistical
     <li><a href="https://sci-hub.st/">Working scihub url</a></li>
     <li><a href="https://libgen.is">Working libgen url</a></li>
   </ul>
+  <hr>
     
     Last updated Aug 20, 2023
 </body>
