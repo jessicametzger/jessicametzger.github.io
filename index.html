@@ -13,29 +13,41 @@
             font-family: 'Ubuntu';
         }
 
-/* Set background image */
-.background {
-    background-image: url(https://github.com/jessicametzger/jessicametzger.github.io/raw/main/background-image.png);
-    background-size: cover; /* Adjust to cover the entire container */
-    background-position: center center; /* Center the image */
-    display: flex;
-    justify-content: left;
-    align-items: start;
-    position: relative; /* Needed for absolute positioning of content */
-}
-
-/* Create translucent text box */
-.content {
-    background-color: rgba(255, 255, 255, 0.8); /* Adjust the alpha value for desired transparency */
-    padding: 20px;
-    border-radius: 10px;
-    color: black; /* Text color */
-    text-align: left;
-    margin-left: 30px; /* Add margin to the left */
-    margin-top: 30px; /* Add margin to the left */
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
+        /* Set background image */
+        .background {
+            background-image: url(https://github.com/jessicametzger/jessicametzger.github.io/raw/main/background-image.png);
+            background-size: cover; /* Adjust to cover the entire container */
+            background-position: center center; /* Center the image */
+            display: flex;
+            justify-content: left;
+            align-items: start;
+            position: relative; /* Needed for absolute positioning of content */
+        }
+        
+        /* Create translucent text box */
+        .content {
+            background-color: rgba(255, 255, 255, 0.75); /* Adjust the alpha value for desired transparency */
+            padding: 20px;
+            border-radius: 10px;
+            color: black; /* Text color */
+            text-align: left;
+            margin-left: 30px; /* Add margin to the left */
+            margin-top: 30px; /* Add margin to the left */
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+    
+        .content1 {
+            background-color: rgba(255, 255, 255, 0); /* Adjust the alpha value for desired transparency */
+            padding: 0;
+            border-radius: 0;
+            color: black; /* Text color */
+            text-align: left;
+            margin-left: 0; /* Add margin to the left */
+            margin-top: 0; /* Add margin to the left */
+            margin-right: 0;
+            margin-bottom: 0;
+        }
 
         .container {
             margin: 10px;
@@ -45,13 +57,13 @@
       
         .text-container {
             float: left; /* Float the text container to the left */
-            width: 70%; /* Adjust as needed */
+            width: 85%; /* Adjust as needed */
             padding: 10px;
         }
 
         .image-container {
             float: right; /* Float the image container to the right */
-            width: 15%; /* Adjust as needed */
+            width: 10%; /* Adjust as needed */
         }
 
         .image-container img {
@@ -76,9 +88,8 @@ p {
         <div class="content">
     <div class="header">
     </div>
-
+  
     <header>
-    <div class="container">
         <div class="text-container">
             <h2>Jessica Metzger</h2>
         <p>jessmetz@mit.edu</p>
@@ -87,12 +98,11 @@ p {
         <div class="image-container">
             <img src="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/head-shot.jpg">
         </div>
-    </div>
     </header>
   
   <br>
   
-    <div class="container">
+    <div class="content1">
         <h2>Articles/preprints</h2>
 <ul>
   <li><a href="https://iopscience.iop.org/article/10.3847/PSJ/ac779a/meta">Low-speed Impacts into Ice–Dust Granular Mixtures</a> - Brisset, J. et al. 2022
