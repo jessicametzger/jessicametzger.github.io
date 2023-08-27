@@ -3,26 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jessica Metzger</title>
-    <style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Website</title>
+  <style>
+  /* Reset default margin and padding for the body */
         body {
             margin: 0;
             padding: 10px;
             font-family: 'Ubuntu';
         }
 
-        .header {
-            background-image: url(https://github.com/jessicametzger/jessicametzger.github.io/raw/main/background-image.png);
-            background-size: cover;
-            background-position: center;
-            height: 200px;
-            color: white;
-            text-align: left;
-            padding-top: 100px;
-      		padding-left: 0px;
-      		padding-right: 0px;
-      		font-weight: bold;
-        }
+/* Set background image */
+.background {
+    background-image: url('https://github.com/jessicametzger/jessicametzger.github.io/blob/main/background-image.png');
+    background-size: cover; /* Adjust to cover the entire container */
+    background-position: center center; /* Center the image */
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    position: relative; /* Needed for absolute positioning of content */
+}
+
+/* Create translucent text box */
+.content {
+    background-color: rgba(255, 255, 255, 0.75); /* Adjust the alpha value for desired transparency */
+    padding: 20px;
+    border-radius: 10px;
+    color: black; /* Text color */
+    text-align: left;
+    margin-left: 30px; /* Add margin to the left */
+    margin-top: 30px; /* Add margin to the left */
+}
 
         .container {
             max-width: 960px;
@@ -46,9 +57,22 @@
             max-width: 100%; /* Make sure the image scales properly */
             display: block;
         }
-    </style>
+
+/* Style the text */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+  </style>
 </head>
 <body>
+    <div class="background">
+        <div class="content">
     <div class="header">
     </div>
   
@@ -121,5 +145,7 @@
   <hr>
     
     Last updated Aug 20, 2023
+        </div>
+    </div>
 </body>
 </html>
