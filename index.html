@@ -5,73 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Jessica Metzger</title>
-  <style>
-        /* Style for the header */
-        header {
-            display: flex;
-            align-items: center; /* Vertical alignment */
-            justify-content: space-between; /* Horizontal alignment */
-            padding: 0;
-        }
-        
-        /* Reset default margin and padding for the body */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Ubuntu';
-        }
+  	<style>
+		/* Style for the header */
+		header {
+			display: flex;
+			align-items: center; /* Vertical alignment */
+			justify-content: space-between; /* Horizontal alignment */
+			padding: 0;
+		}
 
-        /* Set background image */
-        .background {
-            background-image: url(https://github.com/jessicametzger/jessicametzger.github.io/raw/main/Untitled%20design_bg.jpeg);
-            background-size: cover; /* Adjust to cover the entire container */
-            background-position: center center; /* Center the image */
-            display: flex;
-            justify-content: left;
-            align-items: start;
-            position: relative; /* Needed for absolute positioning of content */
-        }
-        
-        /* Create translucent text box */
-        .content {
-            background-color: rgba(255, 255, 255, 0.85); /* Adjust the alpha value for desired transparency */
-            padding: 20px;
-            border-radius: 10px;
-            color: black; /* Text color */
+		/* Reset default margin and padding for the body */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Ubuntu';
+		}
+
+		/* Set background image */
+		.background {
+			background-image: url(https://github.com/jessicametzger/jessicametzger.github.io/raw/main/Untitled%20design_bg.jpeg);
+			background-size: cover; /* Adjust to cover the entire container */
+			background-position: center center; /* Center the image */
+			display: flex;
+			justify-content: left;
+			align-items: start;
+			position: relative; /* Needed for absolute positioning of content */
+			min-height: 100vh; /* Ensure it covers the entire viewport height */
+		}
+
+		/* Fix layout for stacking boxes */
+		.content {
+			display: flex;
+			flex-direction: column; /* Stack boxes vertically */
+			gap: 20px; /* Add space between boxes */
+			width: 95%; /* Ensure full width is used */
+		}
+
+		.content-box {
+			background-color: rgba(255, 255, 255, 0.85); /* Adjust opacity */
+			padding: 10px;
+			margin: 0 20px; /* Center the boxes horizontally */
+			margin-bottom: 15px; /* Add spacing between boxes */
+			border-radius: 10px; /* Rounded corners */
+			color: black; /* Text color */
             text-align: left;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Optional: Add a subtle shadow */
             margin-left: 30px; /* Add margin to the left */
-            margin-top: 30px; /* Add margin to the left */
+            margin-top: 0px; /* Add margin to the left */
             margin-right: 30px;
-            margin-bottom: 30px;
-        }
-    
-        .content1 {
-            background-color: rgba(255, 255, 255, 0); /* Adjust the alpha value for desired transparency */
-            padding: 0;
-            border-radius: 0;
-            color: black; /* Text color */
-            text-align: left;
-            margin-left: 0; /* Add margin to the left */
-            margin-top: 0; /* Add margin to the left */
-            margin-right: 0;
-            margin-bottom: 0;
-        }
+            margin-bottom: 0px;
+		}
 
-        .container {
-            margin: 10px;
-            padding: 10px;
-  			justify-content: space-around;
-        }
-      
         .text-container {
             float: left; /* Float the text container to the left */
-            width: 85%; /* Adjust as needed */
-            padding: 10px;
+            width: 80%; /* Adjust as needed */
+            padding: 0px;
         }
 
         .image-container {
             float: right; /* Float the image container to the right */
-            width: 10%; /* Adjust as needed */
+            width: 20%; /* Adjust as needed */
         }
 
         .image-container img {
@@ -79,98 +72,108 @@
             display: block;
         }
 
-/* Style the text */
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
+		/* Style the text */
+		h1 {
+			font-size: 24px;
+			margin-bottom: 0px;
+		}
+		h2 {
+			font-size: 18px;
+			margin-bottom: 0px;
+		}
+		p {
+			font-size: 16px;
+		}
 
-p {
-    font-size: 1.2rem;
-}
-
-  </style>
+	</style>
 </head>
 <body>
-    <div class="background">
-        <div class="content">
-    <div class="header">
-    </div>
+<div class="background">
+    <div class="content">
+    	<div class="header">
+    	</div>
   
-    <header>
-        <div class="text-container">
-            <h1>Jessica Metzger</h1>
-        <p><a href="mailto:jessmetz@mit.edu">jessmetz@mit.edu</a></p>
-        <p><a href="https://scholar.google.com/citations?hl=en&user=wew6ycEAAAAJ">Google scholar</a> </p>
-        <p>Physics PhD Candidate at MIT studying nonequilibrium statistical physics and active matter. Former physics/math undergraduate at the University of Chicago.</p>
-        <p>Representative in MIT's Graduate Student Council (GSC) for the Physics department, 2024-2025 academic calendar.</p>
-        </div>
-        <div class="image-container">
-            <img src="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/head-shot-1.jpg">
-        </div>
-    </header>
+    	<header>
+			<div class="content-box">
+				<div class="text-container">
+				<h1>Jessica Metzger</h1>
+					<p><a href="mailto:jessmetz@mit.edu">jessmetz@mit.edu</a></p>
+					<p><a href="https://scholar.google.com/citations?hl=en&user=wew6ycEAAAAJ">Google scholar</a> </p>
+					<p>Physics PhD Candidate at MIT studying nonequilibrium statistical physics and active matter. Former physics/math undergraduate at the University of Chicago.</p>
+					<p>Representative of the physics department in the MIT Graduate Student Council (2024-2025 academic year).</p>
+				</div>
+				<div class="image-container">
+					<img src="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/head-shot-1.jpg">
+				</div>
+			</div>
+		</header>
   
-  <br>
-  
-    <div class="content1">
-        <h2>Articles/preprints</h2>
-<ul>
-  <li><a href="https://arxiv.org/abs/2412.07851">Revisiting the Ratchet Principle: When Hidden Symmetries Prevent Steady Currents</a> - Metzger, J. et al. 2024. Arxiv preprint 2412.07851.
-  <li><a href="https://iopscience.iop.org/article/10.3847/PSJ/ac779a/meta">Low-speed Impacts into Ice–Dust Granular Mixtures</a> - Brisset, J. et al. 2022. The Planetary Science Journal 3 (7), 176.
-  <li><a href="https://iopscience.iop.org/article/10.3847/1538-4357/ac7de0">Gas and Cosmic-Ray Properties in the MBM 53, 54, and 55 Molecular Clouds and the Pegasus Loop as Revealed by HI Line Profiles, Dust, and Gamma-Ray Data</a> - Mizuno, T. et al. 2022. The Astrophysical Journal 935 (2), 97. (<a href="https://arxiv.org/abs/2207.00214">arxiv preprint</a>) </li>
-  <li><a href="https://www.aanda.org/articles/aa/abs/2019/11/aa36228-19/aa36228-19.html">Multi-Particle Collisions in Microgravity: Coefficient of Restitution and Sticking Threshold for Systems of Mm-Sized Particles</a> - Brisset, J. et al. 2019. Astronomy & Astrophysics 631, A35. (<a href="https://arxiv.org/abs/1909.06417">arxiv preprint</a>) </li>
-  <li><a href="https://iopscience.iop.org/article/10.3847/2041-8213/aa9d82">HOW MANY KILONOVAE CAN BE FOUND IN PAST, PRESENT, AND FUTURE SURVEY DATASETS?</a> - Scolnic, D. et al. 2018. The Astrophysical Journal Letters 852 (1), L3. (<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjy09SWm5b-AhXUFVkFHXKNDZMQFnoECAkQAQ&url=https%3A%2F%2Farxiv.org%2Fabs%2F1710.05845&usg=AOvVaw1EKJBwdSnfo5EDOXfS3bxw">arxiv preprint</a>)</li>
-</ul>
+		<div class="content-box">
+			<h2>Articles/preprints</h2>
+			<ul>
+				<li><a href="https://arxiv.org/abs/2412.07851">Revisiting the Ratchet Principle: When Hidden Symmetries Prevent Steady Currents</a> - Metzger, J. et al. 2024. Arxiv preprint 2412.07851.
+				<li><a href="https://iopscience.iop.org/article/10.3847/PSJ/ac779a/meta">Low-speed Impacts into Ice–Dust Granular Mixtures</a> - Brisset, J. et al. 2022. The Planetary Science Journal 3 (7), 176.
+				<li><a href="https://iopscience.iop.org/article/10.3847/1538-4357/ac7de0">Gas and Cosmic-Ray Properties in the MBM 53, 54, and 55 Molecular Clouds and the Pegasus Loop as Revealed by HI Line Profiles, Dust, and Gamma-Ray Data</a> - Mizuno, T. et al. 2022. The Astrophysical Journal 935 (2), 97. (<a href="https://arxiv.org/abs/2207.00214">arxiv preprint</a>) </li>
+				<li><a href="https://www.aanda.org/articles/aa/abs/2019/11/aa36228-19/aa36228-19.html">Multi-Particle Collisions in Microgravity: Coefficient of Restitution and Sticking Threshold for Systems of Mm-Sized Particles</a> - Brisset, J. et al. 2019. Astronomy & Astrophysics 631, A35. (<a href="https://arxiv.org/abs/1909.06417">arxiv preprint</a>) </li>
+				<li><a href="https://iopscience.iop.org/article/10.3847/2041-8213/aa9d82">HOW MANY KILONOVAE CAN BE FOUND IN PAST, PRESENT, AND FUTURE SURVEY DATASETS?</a> - Scolnic, D. et al. 2018. The Astrophysical Journal Letters 852 (1), L3. (<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjy09SWm5b-AhXUFVkFHXKNDZMQFnoECAkQAQ&url=https%3A%2F%2Farxiv.org%2Fabs%2F1710.05845&usg=AOvVaw1EKJBwdSnfo5EDOXfS3bxw">arxiv preprint</a>)</li>
+			</ul>
+		</div>
+	  
+		<div class="content-box">
+			<h2>Misc. research and expository papers</h2>
+			<ul>
+				<li><a href="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/8_592_Final_Project.pdf">A consumer-resource model of phylogenetic diversification</a> - 8.592 (Statistical physics in biology) final project. Dec 2024.</li>
+				<li><a href="http://web.mit.edu/8.334/www/grades/projects/projects23/MetzgerJessica.pdf">Phase separation and detailed balance violation in a two-temperature system</a> - 8.334 (Statistical physics of fields) final project. May 2023.</li>
+				<li><a href="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/bachelors_thesis_final.pdf">Droplet spreading in a chiral active fluid</a> - Bachelor's thesis, done in the Irvine Lab at UChicago.</li>
+				<li><a href="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/PHYS252_paper_CD.pdf">Complex Dynamics and Renormalization</a> - PHYS 252 (nonlinear dynamics, audited) final. May 2021.</li>
+				<li><a href="http://math.uchicago.edu/~may/REU2020/REUPapers/Metzger.pdf">Phase transitions in Lattice systems</a> - UChicago 2020 Math REU. August 2020. </li>
+				<li><a href="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/MATH276_paper.pdf">Thermodynamic formalism</a> - MATH 276 (dynamical systems) final. May 2020.</li>
+				<li><a href="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/MATH270_paper_CD.pdf">Complex Dynamics</a> - MATH 270 (complex variables) final. May 2019</li>    
+			</ul>
+		</div>
 
-        <h2>Misc. research and expository papers</h2>
-<ul>
-  <li><a href="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/8_592_Final_Project.pdf">A consumer-resource model of phylogenetic diversification</a> - 8.592 (Statistical physics in biology) final project. Dec 2024.</li>
-  <li><a href="http://web.mit.edu/8.334/www/grades/projects/projects23/MetzgerJessica.pdf">Phase separation and detailed balance violation in a two-temperature system</a> - 8.334 (Statistical physics of fields) final project. May 2023.</li>
-  <li><a href="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/bachelors_thesis_final.pdf">Droplet spreading in a chiral active fluid</a> - Bachelor's thesis, done in the Irvine Lab at UChicago.</li>
-  <li><a href="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/PHYS252_paper_CD.pdf">Complex Dynamics and Renormalization</a> - PHYS 252 (nonlinear dynamics, audited) final. May 2021.</li>
-  <li><a href="http://math.uchicago.edu/~may/REU2020/REUPapers/Metzger.pdf">Phase transitions in Lattice systems</a> - UChicago 2020 Math REU. August 2020. </li>
-  <li><a href="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/MATH276_paper.pdf">Thermodynamic formalism</a> - MATH 276 (dynamical systems) final. May 2020.</li>
-  <li><a href="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/MATH270_paper_CD.pdf">Complex Dynamics</a> - MATH 270 (complex variables) final. May 2019</li>    
-</ul>
+		<div class="content-box">
+			<h2>Posters</h2>
+			<ul>
+				<li><a href="https://boulderschool.yale.edu/sites/default/files/metzger_jessica_poster_session-3-v2.png">Exceptions to the Ratchet Principle: Rectification of Inhomogeneous Fluctuations</a> - Research from the 2nd year of my PhD. Presented in the Summer of 2024.</li>
+				<li><a href="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/ratchets_poster.pdf">Ratchet Currents in Activity Landscapes</a> - Research from the 1st year of my PhD. Presented in the Summer of 2023.</li>
+				<li><a href="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/UCRS_2022_poster.pdf">Droplet Spreading in a Chiral Active Fluid</a> - Bachelor's thesis, done in the Irvine lab at UChicago. May 2022.</li>
+				<li><a href="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/grcr_ucistem_poster.pdf">Modeling the Diffuse Gamma ray Spectrum with Cosmic Rays</a> - Summer research internship with Tsunefumi Mizuno at the Hiroshima University Astrophysics department. September 2019.</li>
+				<li><a href="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/Neutrinosphere_model_poster.pdf">A Neutrinosphere Model for Kilonova Photometry</a> - Summer research internship with James Annis, with the Dark Energy Survey at Fermilab. August 2018.</li>
+			</ul>
+		</div>
 
-        <h2>Posters</h2>
-<ul>
-  <li><a href="https://boulderschool.yale.edu/sites/default/files/metzger_jessica_poster_session-3-v2.png">Exceptions to the Ratchet Principle: Rectification of Inhomogeneous Fluctuations</a> - Research from the 2nd year of my PhD. Presented in the Summer of 2024.</li>
-  <li><a href="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/ratchets_poster.pdf">Ratchet Currents in Activity Landscapes</a> - Research from the 1st year of my PhD. Presented in the Summer of 2023.</li>
-  <li><a href="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/UCRS_2022_poster.pdf">Droplet Spreading in a Chiral Active Fluid</a> - Bachelor's thesis, done in the Irvine lab at UChicago. May 2022.</li>
-  <li><a href="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/grcr_ucistem_poster.pdf">Modeling the Diffuse Gamma ray Spectrum with Cosmic Rays</a> - Summer research internship with Tsunefumi Mizuno at the Hiroshima University Astrophysics department. September 2019.</li>
-  <li><a href="https://github.com/jessicametzger/jessicametzger.github.io/raw/main/Neutrinosphere_model_poster.pdf">A Neutrinosphere Model for Kilonova Photometry</a> - Summer research internship with James Annis, with the Dark Energy Survey at Fermilab. August 2018.</li>
-</ul>
+		<div class="content-box">
+			<h2>Magazine articles</h2>
+			<ul>
+				<li><a href="https://thetech.com/2024/10/03/mit-researches-for-human-rights-abuses">Research for human rights abuses: how MIT breaks its own rules.</a> - <i>Guest Column</i>, The Tech at MIT. Oct. 3, 2024.</li>
+				<li><a href="https://issuu.com/uchicagotth/docs/scientia_-_winter_2021_-_single/47">Disorder, Instability, and Traffic Jams: An Inquiry with Dr. Sidney Nagel.</a> - <i>Scientia</i>, The Triple Helix at UChicago. Winter 2021</li>
+				<li><a href="https://issuu.com/uchicagotth/docs/winter_20_final_draft_1-20-20_pages/16">A Symphony of Strings: An Inquiry with Professor Savdeep Sethi.</a> - <i>Scientia</i>, The Triple Helix at UChicago. Winter 2020. </li>
+				<li><a href="https://issuu.com/uchicagotth/docs/scientia_winter_19_final_single_pre/10">Neutron Star Collisions & Kilonova Modeling.</a> - <i>Scientia</i>, The Triple Helix at UChicago. Winter 2019. </li>
+				<li><a href="https://thetriplehelix.uchicago.edu/1819/2019/1/16/saving-earth-from-a-killer-asteroid-by-jessica-metzger">Saving Earth from a Killer Asteroid</a> - <i>Spectrum</i>, The Triple Helix at UChicago. Winter 2019.</li>    
+			</ul>
+		</div>
 
-        <h2>Magazine articles</h2>
-<ul>
-  <li><a href="https://thetech.com/2024/10/03/mit-researches-for-human-rights-abuses">Research for human rights abuses: how MIT breaks its own rules.</a> - <i>Guest Column</i>, The Tech at MIT. Oct. 3, 2024.</li>
-  <li><a href="https://issuu.com/uchicagotth/docs/scientia_-_winter_2021_-_single/47">Disorder, Instability, and Traffic Jams: An Inquiry with Dr. Sidney Nagel.</a> - <i>Scientia</i>, The Triple Helix at UChicago. Winter 2021</li>
-  <li><a href="https://issuu.com/uchicagotth/docs/winter_20_final_draft_1-20-20_pages/16">A Symphony of Strings: An Inquiry with Professor Savdeep Sethi.</a> - <i>Scientia</i>, The Triple Helix at UChicago. Winter 2020. </li>
-  <li><a href="https://issuu.com/uchicagotth/docs/scientia_winter_19_final_single_pre/10">Neutron Star Collisions & Kilonova Modeling.</a> - <i>Scientia</i>, The Triple Helix at UChicago. Winter 2019. </li>
-  <li><a href="https://thetriplehelix.uchicago.edu/1819/2019/1/16/saving-earth-from-a-killer-asteroid-by-jessica-metzger">Saving Earth from a Killer Asteroid</a> - <i>Spectrum</i>, The Triple Helix at UChicago. Winter 2019.</li>    
-</ul>
-      
-        <h2>Contact</h2>
-      <p>
-        Office: MIT 6C-431
-      </p>
-        <p>Email: jessmetz@mit.edu</p>
-    </div>
-  
-  <hr>
-  <p>
-  Misc.
-  </p>
-  <ul>
-    <li>The background of this page is a collage made by my sister Olivia <a href="https://www.instagram.com/liv.m.art/">@liv.m.art</a></li>
-    <li><a href="https://sci-hub.st/">Working scihub url</a></li>
-    <li><a href="https://libgen.is">Working libgen url</a></li>
-  </ul>
-  <hr>
-    
-    Last updated Jan. 8, 2024
-        </div>
-    </div>
+		<div class="content-box">
+			<h2>Contact</h2>
+			<p>Office: MIT 6C-431</p>
+			<p>Email: jessmetz@mit.edu</p>
+		</div>
+	  
+		  
+
+		<div class="content-box">
+			<h2>Misc.</h2>
+			<ul>
+				<li>The background of this page is a collage made by my sister Olivia <a href="https://www.instagram.com/liv.m.art/">@liv.m.art</a></li>
+				<li><a href="https://sci-hub.st/">Working scihub url</a></li>
+				<li><a href="https://libgen.is">Working libgen url</a></li>
+			</ul>
+			<br>
+			<hr>
+			Last updated Jan. 8, 2024
+		</div>
+		
+	</div>
 </body>
 </html>
